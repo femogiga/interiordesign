@@ -1,0 +1,335 @@
+:root {
+    --site-color-style: #19181C;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0rem;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 1600px;
+    background-color: var(--site-color-style);
+    font-family: 'Titillium Web', 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--site-color-style);
+    padding: 0.1rem 0rem 4rem;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(185, 159, 159);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+
+}
+
+
+
+
+
+.container {
+    width: 80%;
+    padding: 3rem 0rem;
+
+    margin: 0 auto;
+}
+
+.top__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__nav>h3 {
+    width: max-content;
+    border: 1px solid white;
+    padding: 0.5rem .8rem;
+
+}
+
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    width: 60%;
+
+}
+
+.list__item{
+    display:block;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    row-gap: 2rem;
+    align-self: center;
+}
+
+.img-cont {
+    width: 60%;
+    position: relative;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-top {
+    display: flex;
+    column-gap: 1rem
+}
+
+.card-top>img {
+    max-width: 20%;
+    border-radius: 100px;
+}
+
+.card>h5 {
+    width: 60%;
+}
+
+.card {
+    background-color: burlywood;
+    width: 50%;
+    padding: 2rem 0 2rem 2rem;
+    position: absolute;
+    z-index: 2;
+    bottom: -5rem;
+    right: 5rem;
+    background-color: var(--site-color-style);
+    color: white;
+    box-shadow: 3px 2px 2px 1px rgb(0, 0, 0, 0.5);
+}
+
+.bread {
+    display: none;
+}
+
+.show-hide {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        font-size: 1.3rem
+    }
+
+    .nav__list {
+        gap: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 2rem 0rem;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media screen and (max-width:989px) {
+    article {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 2rem 0rem;
+        margin: 0 auto;
+    }
+
+    .top__nav>h3 {
+
+        white-space: nowrap;
+
+    }
+
+
+
+    .main__text {
+        width: 100%;
+
+    }
+
+    .main__text h1,
+    .main__text p {
+        width: 70%;
+    }
+
+    .img-cont {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:675px) {
+    .list__items {
+        display: none;
+    }
+
+    .top__nav>h3 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .top__nav {
+        width: 100%;
+    }
+
+
+
+    .card {
+        width: 70%;
+        right: 3rem
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem 0rem;
+        margin: 0 auto;
+    }
+
+    .hero {
+        width: 95%;
+        padding: 0.1rem 0rem 2rem;
+    }
+
+    .bread {
+        display: inline-block;
+        color: white;
+    }
+
+    .hamburger {
+        width: 3rem;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .element {
+        width: 100%;
+        border: 4px solid white;
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 4px
+    }
+
+
+
+    #pink {
+        border-color: purple;
+    }
+
+    .hide-pink {
+        display: none;
+    }
+
+    .rotate-yellow {
+        transform-origin: center;
+        transform: translateY(18px) rotate(45deg);
+    }
+
+    .rotate-blue {
+        transform-origin: center;
+        transform: rotate(-45deg);
+    }
+
+    /* .hamburger:focus > #blue{
+        transform-origin:center;
+        transform:  rotate(-45deg);
+    } */
+
+    .hamburger:focus {
+        cursor: pointer;
+    }
+
+    .hide-main {
+         display:none;
+
+    }
+
+
+    .show {
+        display: block;
+        transform: tranlateY(300px)
+    }
+
+    .show-hide>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width:300px) {
+
+    .top__nav {
+        width: 100%;
+    }
+
+    .top__nav>h3 {
+        width: 70%;
+        white-space: nowrap;
+        background-color: red
+    }
+
+    .nav__list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+
+
+
+
+
+
+
+}
